@@ -6,8 +6,8 @@ const app = express();
 
 app.use(express.json());
 
-app.use(servicesRoutes);
+app.use("/services", servicesRoutes);
 
-app.listen(333, () => {
+app.listen(3333, () => {
   console.log("Server is running!");
 });
